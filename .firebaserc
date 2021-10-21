@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "jugadoresyurani": {
+      "hosting": {
+        "jugadoresYurani": [
+          "jugadoresyurani"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "jugadoresyurani"
+  }
+}

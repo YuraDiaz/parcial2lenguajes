@@ -1,0 +1,25 @@
+<nav class="navegacion">
+    <div class="diz">futbol play</div>
+    <div class="dder">jugadores</div>
+</nav>
+<section>
+    <header class="centrar">
+        <h1>Infografía Jugadores</h1>
+    </header>
+    <div class="centrar">
+
+
+        <figure class="bloqueimg" *ngFor="let jugador of jugadores">
+
+            <a [routerLink]="[ '../jugador', jugador.id]"><img src="{{jugador.img}}" alt="Messi"></a>
+            <figcaption>{{jugador.nombre}}</figcaption>
+        </figure>
+
+    </div>
+
+
+</section>
+
+<footer>
+    <div>Diseñada por: Alex Yurani Diaz</div>
+</footer>

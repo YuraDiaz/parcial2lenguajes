@@ -1,0 +1,27 @@
+<nav class="navegacion">
+    <div class="diz">futbol play</div>
+    <div class="dder"><a class="url2" [routerLink]="[ '/']">jugadores</a></div>
+</nav>
+<section>
+    <header class="centrar">
+        <h1>Infografía Jugador</h1>
+    </header>
+    <div class="text-center row mx-5 px-5" *ngFor="let j of jugador">
+        <figure class="col-6">
+            <img src="{{j.img}}" alt="{{j.nombre}}">
+            <figcaption>{{j.nombre}}</figcaption>
+        </figure>
+        <div class="col-6 text-start">
+            <b>Nombre:</b> {{j.nombre}}<br>
+            <b>Equipo: </b> {{j.equipo}} <br>
+            <b>Fecha de nacimiento: </b> {{j.nacimiento}} <br>
+            <b>Seleccion: </b> {{j.seleccion}} <br>
+            <b>Biografia: </b> {{j.bio}} <br>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div>Diseñada por: Alex Yurani Diaz</div>
+</footer>
